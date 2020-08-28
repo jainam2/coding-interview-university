@@ -11,6 +11,7 @@ class Vector:
 		for i in range(self._size):
 			new_vec[i] = self._vector[i]
 		self._vector = new_vec
+		del new_vec
 
 	def size(self):
 		return self._size
@@ -90,14 +91,4 @@ if __name__ == "__main__":
 	print("Testing the module....")
 	doctest.testmod()
 	print("Tested the module")
-	v = Vector()
-	for i in range(30):
-		v.push(i+1)
-		print(v.capacity())
-		print(v)
-
-	for j in range(20):
-		v.pop()
-		print(v.capacity())
-		print(v)
-
+	
