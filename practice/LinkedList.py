@@ -184,10 +184,3 @@ if __name__ == "__main__":
 	doctest.testmod()
 	print("Tested status - 200 OK")
 	print(f"Time to test: {round(time.time() - start, 10)} ms")
-
-	sll = LinkedList()
-	for i in range(1, 10):
-		sll.push_front(i)
-	sll.display()
-	sll.reverse()
-	sll.display()
