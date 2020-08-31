@@ -166,6 +166,16 @@ class LinkedList:
 		if sol:
 			self.erase(sol[1])
 
+	def reverse(self):
+		prev = None
+		curr = self._head
+		while (curr):
+			next = curr._next
+			curr._next = prev
+			prev = curr
+			curr = next
+		self._head = prev
+
 if __name__ == "__main__":
 	import doctest
 	import time
@@ -174,3 +184,10 @@ if __name__ == "__main__":
 	doctest.testmod()
 	print("Tested status - 200 OK")
 	print(f"Time to test: {round(time.time() - start, 10)} ms")
+
+	sll = LinkedList()
+	for i in range(1, 10):
+		sll.push_front(i)
+	sll.display()
+	sll.reverse()
+	sll.display()

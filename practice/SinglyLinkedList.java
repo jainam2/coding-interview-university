@@ -1,9 +1,3 @@
-public class SinglyLinkedList{
-	public static void main(String[] args){
-	}
-}
-
-
 class LinkedList{
 	private Node head = null;
 	private int size = 0;
@@ -218,6 +212,21 @@ class LinkedList{
 			size--;
 
 		}
+	}
+
+
+	public void reverse(){
+		Node prev = null;
+		Node curr = head;
+		Node temp;
+
+		while (curr != null){
+			temp = curr.next;
+			curr.next = prev;
+			prev = curr;
+			curr = temp;
+		}
+		head = prev;
 	}
 
 
