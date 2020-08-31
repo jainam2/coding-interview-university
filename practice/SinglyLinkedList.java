@@ -1,6 +1,8 @@
 class LinkedList{
+
 	private Node head = null;
 	private int size = 0;
+
 
 	public void display(){
 		if (head != null){
@@ -21,6 +23,7 @@ class LinkedList{
 	public int size(){
 		return size;
 	}
+
 
 	public int value_at(int index){
 
@@ -162,6 +165,7 @@ class LinkedList{
 		size--;
 	}
 
+
 	public int value_n_from_end(int n){
 		
 		if (n<=size){
@@ -228,9 +232,9 @@ class LinkedList{
 		}
 		head = prev;
 	}
-
-
 }
+
+
 
 class Node{
 	int data;
