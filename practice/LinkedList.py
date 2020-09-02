@@ -41,7 +41,7 @@ class LinkedList:
 
 		self._size += 1
 
-	def pop_front(self):	
+	def pop_front(self):
 		if self._head == None:
 			return None
 		else:
@@ -65,8 +65,8 @@ class LinkedList:
 		self._size += 1
 
 	def pop_back(self):
-		
-		if self._head:	
+
+		if self._head:
 			curr = self._head
 			prev = curr
 			while curr._next:
@@ -75,7 +75,7 @@ class LinkedList:
 			prev._next = None
 			self._size -= 1
 			return curr._value
-		
+
 		else:
 			temp = self._head._value
 			self._head = None
@@ -112,7 +112,7 @@ class LinkedList:
 			prev = curr
 			curr = curr._next
 			index -= 1
-		
+
 		new_node._next = prev._next
 		prev._next = new_node
 		self._size += 1
@@ -140,7 +140,7 @@ class LinkedList:
 		return curr._value
 
 	def value_n_from_end(self, n):
-		n = self._size - n 
+		n = self._size - n
 		if n<self._size:
 			curr = self._head
 			while n:
@@ -162,7 +162,7 @@ class LinkedList:
 		return (True, index) if curr._value == element else False
 
 	def remove_value(self, element):
-		sol = self.find(element)	
+		sol = self.find(element)
 		if sol:
 			self.erase(sol[1])
 
