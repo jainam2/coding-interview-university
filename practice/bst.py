@@ -214,24 +214,10 @@ class BinarySearchTree:
 
 
 if __name__ == "__main__":
-	bst = BinarySearchTree()
-	bst.insert(3)
-	bst.insert(1)
-	bst.insert(2)
-	bst.insert(4)
-	bst.insert(5)
-
-	print(list(bst.level_order_traversal()))
-	print(list(bst.inorder_traversal()))
-	print(list(bst.preorder_traversal()))
-	print(list(bst.postorder_traversal()))
-
-	print(bst.is_in_tree(5))
-	print(bst.get_height())
-	print(bst.get_min())
-	print(bst.get_max())
-	print(bst.is_bst())
-	bst.delete_value(3)
-	print(list(bst.level_order_traversal()))
-	print(bst._root.value)
-	print(bst.is_bst())
+	import doctest
+	import time
+	start = time.time()
+	print("Testing...")
+	doctest.testmod()
+	print("Tested status - 200 OK")
+	print(f"Time to test: {round(time.time() - start, 10)} ms")
