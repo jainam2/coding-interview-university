@@ -15,13 +15,6 @@ class ArrayQueue{
 		queue = new int[8];
 	}
 
-	public void display(){
-		for (int i=0; i<capacity; i++){
-			System.out.print(queue[i] + " ");
-		}
-		System.out.println();
-	}
-
 
 	public void enqueue(int val){
 		if (queue[front] == 0){
@@ -46,6 +39,18 @@ class ArrayQueue{
 			size--;
 		}
 	}
+
+
+	public void display(){
+
+		int temp = rear;
+		while (temp != front){
+			System.out.print(queue[temp] + " ");
+			temp = (temp + 1) % capacity;
+		}
+		System.out.println();
+	}
+
 
 	public static void main(String[] args){
 		// Test the object here.
