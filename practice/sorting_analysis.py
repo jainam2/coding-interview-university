@@ -10,16 +10,18 @@ ms = []
 for i in n:
 	array = list(reversed(range(i)))
 	start = time.time()
-	merge_sort.merge_sort(array)
+	arr = merge_sort.merge_sort(array)
 	end = time.time()
 
 	ms.append(end-start)
 
 	start = time.time()
-	quick_sort.quick_sort(array)
+	arr = quick_sort.quick_sort(array)
 	end = time.time()
 
 	qs.append(end-start)
+
+
 
 plt.scatter(n, ms, color="blue", label = "Merge Sort", s=5)
 plt.scatter(n, qs, color="red", label = "Quick Sort", s=5)

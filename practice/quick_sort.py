@@ -4,16 +4,24 @@ def quick_sort(array):
 
 	if len(array) <= 1:
 		return array
+	
+	random.shuffle(array)
+	
+	pivot = array[-1]
+	i, j = 0, len(array) - 2
 
-	pivot = random.choice(array)
-	hi, lo, eq = [], [], []
+	while i <= j:
+		
+		while array[i] <= pivot and i <= j:
+			i += 1
+			
+		while array[j] > pivot and i <= j:
+			j -= 1
+			
+		if i <= j:
+			array[i], array[j] = array[j], array[i]
+			i += 1
+			j -= 1
 
-	for i in array:
-		if i < pivot:
-			lo.append(i)
-		elif i > pivot:
-			hi.append(i)
-		else:
-			eq.append(i)
 
-	return quick_sort(lo) + eq + quick_sort(hi)
+	return quick_sort(array[:i]) + [pivot] +  quick_sort(array[i: -1])
