@@ -33,7 +33,6 @@ class Kosaraju:
 			if not self.seen[node]:
 				scc += 1
 				self.dfs(node)
-
 		return scc
 
 Graph = [[0, 1, 0, 0, 0],
