@@ -1,0 +1,24 @@
+Array
+Linked list
+stack
+queue
+Hash table
+Binary Search
+Trees:  traversals: preorder, inorder, postorder, BFS, DFS
+heap sort
+bubble sort
+insertion sort
+merge sort
+quick sort
+selection sort
+counting sort  (review)
+radix sort  (review)
+Graphs: BFS (queue) and DFS (stack)
+Dijkstra
+Bellman-Ford (review)
+Topological Sorting
+Minimum Spanning Trees
+Prim's Algorithm
+Kruskal's Algorithm (review)    Union Find Data Structure
+Kosaraju's Algorithm (strongly connected component)
+Bipartite graph
