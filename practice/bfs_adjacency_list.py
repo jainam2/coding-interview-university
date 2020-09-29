@@ -1,5 +1,4 @@
 from collections import deque
-
 def breath_first_search(root, graph):
     dist = {}
     for node in graph.keys():

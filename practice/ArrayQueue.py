@@ -5,7 +5,6 @@ class ArrayQueue:
 		self._front = self._rear = 0
 		self._size = 0
 
-
 	def _resize(self, new_capacity):
 		new_array = [None for i in range(new_capacity)]
 		new_front = 0
