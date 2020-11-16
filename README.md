@@ -924,17 +924,17 @@ Graphs can be used to represent many problems in computer science, so this secti
 	- [ ] [Quick UML review (video)](https://www.youtube.com/watch?v=3cmzqZzwNDM&list=PLGLfVvz_LVvQ5G-LdJ8RLqe-ndo7QITYc&index=3)
 	- [ ] Learn these patterns:
 		- [X] strategy
-		- [ ] singleton
-		- [ ] adapter
+		- [X] singleton
+		- [X] adapter
 		- [ ] prototype
-		- [ ] decorator
+		- [X] decorator
 		- [ ] visitor
-		- [ ] factory, abstract factory
-		- [ ] facade
-		- [ ] observer
-		- [ ] proxy
+		- [X] factory, abstract factory
+		- [X] facade
+		- [X] observer
+		- [X] proxy
 		- [ ] delegate
-		- [ ] command
+		- [X] command
 		- [ ] state
 		- [ ] memento
 		- [ ] iterator
