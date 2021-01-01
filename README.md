@@ -889,7 +889,7 @@ Graphs can be used to represent many problems in computer science, so this secti
 		- [X] [Tail Recursion (video)](https://www.youtube.com/watch?v=L1jjXGfxozc)
 
 - ### Dynamic Programming   ***Super Tough of all topics covered so far***
-	[ ] Best Play List for dynamic programming (https://www.youtube.com/playlist?list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go)
+	- [X] Best Play List for dynamic programming (https://www.youtube.com/playlist?list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go)
 
 	- You probably won't see any dynamic programming problems in your interview, but it's worth being able to recognize a problem as being a candidate for dynamic programming.
 	- This subject can be pretty difficult, as each DP soluble problem must be defined as a recursion relation, and coming up with it can be tricky.
